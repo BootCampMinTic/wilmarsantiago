@@ -1,0 +1,129 @@
+/* Importa la fuente 'Poppins' desde Google Fonts con varios estilos y pesos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos globales aplicados a todos los elementos */
+ * {
+    margin: 0; /* Quita márgenes predeterminados */
+    padding: 0; /* Quita relleno predeterminado */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+    text-decoration: none; /* Quita subrayados de enlaces */
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente 'Poppins' a todo el documento */
+}
+
+/* Variables de colores y tamaño de fuente definidas en :root para fácil acceso */
+:root {
+    --color_text-primary: #309C13; /* Verde primario */
+    --color_text-secundary: #101E2C; /* Azul oscuro */
+    --color_text-tertiary: #155404; /* Verde oscuro */
+    --lowText_font_size: 16px; /* Tamaño de fuente base */
+    --main_color-primary: #155404; /* Define el color primario del tema, utilizado para elementos destacados y acentos */
+	--main_color-secundary: #8ADA74; /* Define el color secundario, que puede ser usado para elementos secundarios o complementarios */
+	--background-color: #EFF0EF; /* Establece el color de fondo general para el diseño, proporcionando un tono claro y suave */
+	--text_size_title: 40px; /* Define el tamaño de fuente para los títulos principales, asegurando que sean prominentes */
+	--text_title_card: 24px; /* Establece el tamaño de fuente para los títulos de tarjetas, permitiendo diferenciación en el contenido */
+	--text_title_cardv2: 20px; /* Define un tamaño de fuente alternativo para otro tipo de títulos de tarjetas, proporcionando flexibilidad en el diseño */
+	--text_paragraph: 16px; /* Establece el tamaño de fuente para el texto de párrafo, asegurando que sea legible y cómodo de leer */
+	--box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2); /* Define un efecto de sombra para los elementos, proporcionando profundidad y separación visual */
+}
+
+/* Header */
+header {
+    width: 100%; /* Ancho completo */
+    height: 100px; /* Altura fija */
+    position: fixed; /* Fijo en la parte superior de la pantalla */
+    z-index: 100; /* Prioridad alta para superponer elementos */
+    background: #41dd41; /* Color de fondo verde */
+}
+
+/* Contenedor principal del encabezado */
+.container_header {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    height: 100%; /* Altura completa del encabezado */
+    margin: auto; /* Centra horizontalmente */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-between; /* Espacia elementos entre los extremos */
+    align-items: center; /* Alinea elementos verticalmente al centro */
+    padding: 0px 20px; /* Relleno lateral de 20px */
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex; /* Usa flexbox para alinear elementos hijos */
+    align-items: center; /* Alinea verticalmente al centro */
+    position: relative; /* Posicionamiento relativo para ajustes si es necesario */
+    z-index: 1; /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    width: 100px; /* Ancho fijo de la imagen del logo */
+}
+
+/* Contenedor del menú principal */
+.menu {
+    display: flex; /* Usa flexbox para alinear elementos en fila */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+/* Estilo del contenedor de navegación dentro del menú */
+.menu nav {
+    margin: 0px 20px; /* Márgenes horizontales de 20px */
+}
+
+/* Estilo de la lista de navegación */
+.menu nav ul {
+    display: flex; /* Flexbox para alinear enlaces horizontalmente */
+}
+
+/* Estilo de cada elemento de la lista de navegación */
+.menu nav ul li {
+    list-style: none; /* Quita los puntos de lista */
+    margin: 20px 16px; /* Márgenes alrededor de cada elemento */
+}
+
+/* Estilo de los enlaces dentro de la lista de navegación */
+.menu nav ul li a {
+    color: black; /* Color del texto de los enlaces (puede ser var(--color_text-secundary)) */
+    font-size: 16px; /* Tamaño de fuente (puede ser var(--lowText_font_size)) */
+    position: relative; /* Posicionamiento relativo para efectos */
+}
+
+/* Efecto hover sobre los enlaces del menú */
+.menu nav ul li a:hover {
+    color: #309C13; /* Cambia el color al verde primario en hover */
+}
+
+/* Botón de llamada a la acción (cita, contacto, etc.) */
+.btn_quote {
+    display: block; /* Muestra el botón como un bloque */
+    padding: 8px 40px; /* Relleno interno */
+    border: 2px solid #309C13; /* Borde verde primario */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: 500; /* Peso de fuente medio */
+    color: #155404; /* Texto de color verde oscuro */
+    margin: 0px 20px; /* Margen horizontal */
+    transition: all 300ms; /* Transición suave para efectos de hover */
+}
+
+/* Efecto hover sobre el botón */
+.btn_quote:hover {
+    color: white; /* Cambia el color del texto a blanco */
+    background: #309C13; /* Fondo verde primario */
+}
+
+/* Estilo del contenedor de redes sociales en el menú */
+.menu .socialMedia {
+    margin: 0px 10px; /* Márgenes laterales */
+}
+
+/* Estilo de los enlaces de redes sociales */
+.menu .socialMedia a {
+    margin: 0px 4px; /* Espacio entre los enlaces de redes sociales */
+}
+
+/* Estilo de las imágenes de redes sociales */
+.menu .socialMedia img {
+    width: 20px; /* Ancho fijo de 20px para los iconos */
+}
+
+/* End Header */
