@@ -23,7 +23,7 @@
 	--text_title_card: 24px; /* Establece el tamaño de fuente para los títulos de tarjetas, permitiendo diferenciación en el contenido */
 	--text_title_cardv2: 20px; /* Define un tamaño de fuente alternativo para otro tipo de títulos de tarjetas, proporcionando flexibilidad en el diseño */
 	--text_paragraph: 16px; /* Establece el tamaño de fuente para el texto de párrafo, asegurando que sea legible y cómodo de leer */
-	--box_shadow-primary: 0px 24px 200px -20px rgba(0, 180, 60, 0.2); /* Define un efecto de sombra para los elementos, proporcionando profundidad y separación visual */
+	--box_shadow-primary: 0px 24px 100px -20px rgba(0, 180, 60, 0.2); /* Define un efecto de sombra para los elementos, proporcionando profundidad y separación visual */
 }
 
 /* Header */
