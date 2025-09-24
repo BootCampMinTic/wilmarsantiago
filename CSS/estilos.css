@@ -23,7 +23,7 @@
 	--text_title_card: 24px; /* Establece el tamaño de fuente para los títulos de tarjetas, permitiendo diferenciación en el contenido */
 	--text_title_cardv2: 20px; /* Define un tamaño de fuente alternativo para otro tipo de títulos de tarjetas, proporcionando flexibilidad en el diseño */
 	--text_paragraph: 16px; /* Establece el tamaño de fuente para el texto de párrafo, asegurando que sea legible y cómodo de leer */
-	--box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2); /* Define un efecto de sombra para los elementos, proporcionando profundidad y separación visual */
+	--box_shadow-primary: 0px 24px 200px -20px rgba(0, 180, 60, 0.2); /* Define un efecto de sombra para los elementos, proporcionando profundidad y separación visual */
 }
 
 /* Header */
@@ -36,7 +36,7 @@ header {
 }
 
 /* Contenedor principal del encabezado */
-.container_header {
+.container__header {
     max-width: 1200px; /* Ancho máximo del contenedor */
     height: 100%; /* Altura completa del encabezado */
     margin: auto; /* Centra horizontalmente */
@@ -98,7 +98,7 @@ header {
 }
 
 /* Botón de llamada a la acción (cita, contacto, etc.) */
-.btn_quote {
+.btn__quote {
     display: block; /* Muestra el botón como un bloque */
     padding: 8px 40px; /* Relleno interno */
     border: 2px solid #309C13; /* Borde verde primario */
@@ -110,7 +110,7 @@ header {
 }
 
 /* Efecto hover sobre el botón */
-.btn_quote:hover {
+.btn__quote:hover {
     color: white; /* Cambia el color del texto a blanco */
     background: #309C13; /* Fondo verde primario */
 }
@@ -289,3 +289,107 @@ header {
 }
 
 /* End Estilos Generales Cards */
+
+/* Sobre Nosotros */
+
+.container__about { /* Estilo para el contenedor principal de la sección Sobre Nosotros */
+    padding: 100px 0px; /* Añade un padding de 100px arriba y abajo */
+    background: var(--background-color); /* Define el color de fondo usando la variable de fondo */
+    margin-top: 100px; /* Añade un margen superior de 100px para separación del contenido anterior */
+}
+
+.about { /* Estilo para el contenedor que agrupa el contenido de Sobre Nosotros */
+    max-width: 1200px; /* Limita el ancho máximo a 1200px */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    padding: 0px 20px; /* Añade un padding lateral de 20px */
+    display: flex; /* Activa el modelo flexbox para organizar los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.text__about { /* Estilo para la sección de texto dentro de Sobre Nosotros */
+    width: 100%; /* Permite que el texto ocupe el 100% del ancho del contenedor */
+    padding-right: 40px; /* Añade un padding a la derecha de 40px para separación de otros elementos */
+}
+
+.text__about h1 { /* Estilo para el encabezado h1 dentro de la sección de texto */
+    color: var(--color_text-secundary); /* Establece el color del texto usando la variable secundaria */
+    font-weight: 600; /* Aplica un peso de fuente más grueso para el título */
+}
+
+.text__about p { /* Estilo para los párrafos dentro de la sección de texto */
+    font-size: var(--text_paragraph); /* Define el tamaño de fuente usando la variable para párrafos */
+    margin-top: 40px; /* Añade un margen superior de 40px para separación del contenido anterior */
+    color: var(--color_text-tertiary); /* Establece el color del texto usando la variable terciaria */
+}
+
+.image__about { /* Estilo para la sección de imagen dentro de Sobre Nosotros */
+    width: 100%; /* Permite que la imagen ocupe el 100% del ancho del contenedor */
+    display: flex; /* Activa el modelo flexbox para organizar las imágenes */
+}
+
+.image__about img { /* Estilo para las imágenes dentro de la sección de imagen */
+    width: 300px; /* Define un ancho fijo de 300px para la imagen */
+}
+
+/*End Sobre Nosotros*/
+
+/* Equipo */
+
+.container__team{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:white;
+}
+
+.team{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__team{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__team p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--color_text-font);
+    font-weight: 500;
+    text-align: center;
+}
+.text__team h1{
+    text-align: center;
+    font-size: 28px;
+}
+
+.container__box__team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las cajas de equipo en el contenedor */
+    gap: 50px; /* Espaciado entre cada caja de equipo */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.box__team {
+    width: 300px; /* Ajusta el ancho de cada caja de equipo */
+    text-align: center;
+}
+
+.container__box__team img{
+    height: 350px;
+    width: 100%; /* Ajusta la imagen al ancho de la caja */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+    border-radius: 20px;
+}
+
+.container__box__team img:hover{
+    transform: scale(1.05);
+}
+
+/* End Equipo */
+
