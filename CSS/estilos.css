@@ -393,3 +393,91 @@ header {
 
 /* End Equipo */
 
+/* Galería */
+
+.container_projects {
+    padding: 100px 0px; /* Añade un padding de 100px arriba y abajo */
+    background: var(--background-color); /* Define el color de fondo usando la variable de fondo */
+    margin-top: 100px; /* Añade un margen superior de 100px para separación del contenido anterior */
+}
+
+.projects {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_projects {
+    max-width: 800px;
+    margin: auto;
+	padding: 40px;
+}
+
+.text_projects p {
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--color_text-font);
+    font-weight: 500;
+    text-align: center;
+}
+
+.text_projects h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Contenedor de Proyectos */
+.container_box_projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Oculta todos los proyectos por defecto */
+.box_projects {
+    display: none;
+}
+
+/* Muestra todos los proyectos cuando "Todos" está seleccionado */
+#all:checked ~ .container_box_projects .box_projects {
+    display: block;
+}
+
+/* Muestra solo la categoría seleccionada */
+#softwareDesarrollo:checked ~ .container_box_projects .softwareDesarrollo,
+#softwareAplicacion:checked ~ .container_box_projects .softwareAplicacion,
+#softwareDesarrollo2:checked ~ .container_box_projects .softwareDesarrollo2 {
+    display: block;
+}
+
+/* Estilos de Imágenes en Proyectos */
+.img_projects {
+    height: 350px;
+    width: 350px; /* Ajusta la imagen al ancho de la caja */
+    border-radius: 5px;
+    display: block;
+}
+
+.box_projects:hover .img_projects {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Texto sobre la Imagen */
+.texto-en-imagen {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(166, 130, 109, 0.6);
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* End Galería */
