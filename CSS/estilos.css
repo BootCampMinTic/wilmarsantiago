@@ -16,8 +16,8 @@
     --color_text-secundary: #101E2C; /* Azul oscuro */
     --color_text-tertiary: #155404; /* Verde oscuro */
     --lowText_font_size: 16px; /* Tamaño de fuente base */
-    --main_color-primary: #155404; /* Define el color primario del tema, utilizado para elementos destacados y acentos */
-	--main_color-secundary: #8ADA74; /* Define el color secundario, que puede ser usado para elementos secundarios o complementarios */
+    --main_color-primary: #8d003b; /* Define el color primario del tema, utilizado para elementos destacados y acentos */
+	--main_color-secundary:#ffe19ab0; /* Define el color secundario, que puede ser usado para elementos secundarios o complementarios */
 	--background-color: #EFF0EF; /* Establece el color de fondo general para el diseño, proporcionando un tono claro y suave */
 	--text_size_title: 40px; /* Define el tamaño de fuente para los títulos principales, asegurando que sean prominentes */
 	--text_title_card: 24px; /* Establece el tamaño de fuente para los títulos de tarjetas, permitiendo diferenciación en el contenido */
@@ -501,7 +501,7 @@ header {
 }
 
 .contact-form  {
-    background: var(--main_color-secundary);
+    background: var(--main_color-primary);
     padding: 20px;
     border-radius: 8px;
     width: 100%;
@@ -551,7 +551,7 @@ header {
 /* Footer */
 .footer{
     width: 100%;
-    background-color: var(--main_color-secundary);
+    background-color: var(--main_color-primary);
     padding: 0;
     margin: 0;
 }
@@ -568,13 +568,16 @@ header {
 }
 .box{
     text-align: center;
+    color:#ffffff ;
 }
 .footer .box{
     margin: 0;
     width: 100%;
+    
 }
 .footer .box_footer-primary p{
     font-size: 14px;
+    color:#ffffff
 }
 
 .footer .box_footer-primary .socialMediaFooter ul a{
@@ -585,10 +588,11 @@ header {
     list-style-type: none;
     padding: 0;
     gap: 15px;
+    
 }
 
 .nav ul a{
-    color: #0D0D0D;
+    color: #ffffff;
     font-weight:500;
     transition: all 300ms ease;
 }
@@ -601,11 +605,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .contactos a{
     display: flex;
     align-items: center;
+    
 }
 
 .contactos img{
@@ -618,6 +624,7 @@ header {
 }
 .contactos a p{
     color: #0D0D0D;
+    
 }
 
 .socialMediaFooter a {
